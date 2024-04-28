@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ques1()">Question:1 & 2</button>
+    <button onclick="ques3()">Question:3</button>
+    <button onclick="ques4()">Question:4</button>
+    <button onclick="ques5()">Question:5</button>
+    <button onclick="ques6()">Question:6</button>
+    <button onclick="ques7()">Question:7</button>
+
+    <script>
+        function ques1(){
+        var a=prompt("Input A Value with decimal Its On You neg or pos");
+        document.write("Number "+a+"<br>")
+        document.write("Round Number "+Math.round(a)+"<BR>")
+        document.write("Floor Number "+Math.floor(a)+"<BR>")
+        document.write("Ceil Number "+Math.ceil(a)+"<BR>")
+        }
+        function ques3(){
+            var b=prompt("Enter a Value For Absoulate Number")
+            document.write("The Absoulate Value Is"+Math.abs(b))
+        }
+        function ques4(){
+        let c=Math.floor( Math.random() *( 7 - 0)+0) 
+        document.write("Random Dice Number Is "+c)
+        }
+        function ques5(){
+        let d=Math.floor(Math.random() *2) + 1
+        
+        if(d === 2){
+            document.write(d+" is Tail")
+        }
+        else{
+            document.write(d+ " Head")
+        }
+    }
+    function ques6(){
+    var e=Math.floor(Math.random() *101) + 1
+    document.write("Random number b/w from 100 to 1 is :"+e)
+    }
+    function ques7(){
+    var f = Math.floor(Math.random() * 10) + 1;
+
+
+var userInput = (prompt("Enter a number between 1 and 10:"));
+
+
+if (userInput === f) {
+   
+    alert(" You guessed the secret number: " + f);
+} else {
+
+    alert("Sorry, the secret number was " + f + ". Try again next time!");
+}
+}
+    </script>
+</body>
+</html>
